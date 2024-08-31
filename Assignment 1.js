@@ -22,13 +22,13 @@ console.log(`Percentage=${percentage}`)
 // document.write(`value1:${value1}<br>value2:${value2}<br>value3:${value3}<br>value4:${value4}<br>value5:${value5}<br>total marks:${total}`)
 // document.write(`percentage,${percentage}`) 
 
- // Write a program to convert interger value to float value.
+ // Write a program to convert integer value to float value.
 console.log("----------int to float----------")
 var num=68;
 console.log(parseFloat(num))
 
  // Write a program to convert interger value to string value.
  var num=23;
- console.log(toString(num))
+ console.log(String(num))
  
  

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .button{
+    height:300px;
+    width:300px;
+    /* background-color:pink; */
+  }
+  button{
+    height:30px;
+    width:100px;
+    margin-top:20px;
+   
+  }
+  .type{
+    height:100px;
+    width:600px;
+    /* background-color: pink; */
+  }
+</style>
+<body>
+<div class="type">
+<input type="number1" id="num1" placeholder="firest number">
+<input type="number2" id="num2" placeholder="second number"><br>
+<input id="result" placeholder="Result" style="margin-top: 10px; height:20px;width:160px;">
+</div>
+<div class="button">
+<button onclick="additon()">Addition</button><br>
+<button onclick="subtract()">subtract</button><br>
+<button onclick="multiply()">multiply</button><br>
+<button onclick="divide()">divide</button>
+</div>
+  <script>
+    //   using array find the greatest and smallest number
+   
+    // let arr=prompt("Enter the number")
+    // let arr1=prompt("Enter the number")
+    // if(arr<=arr1){
+    //  document.write("number is greater")
+    // }
+    // else
+    // {
+    //  document.write("number is smaller")
+    // }
+
+
+
+
+    // 1. menu driven program
+       
+    function additon(){
+    var n,m,result;
+    n=parseInt(document.getElementById("num1").value);
+    m=parseInt(document.getElementById("num2").value);
+    result=parseInt(n)+parseInt(m);
+    document.getElementById("result").value=result
+   
+    }
+    additon()
+
+    function subtract(){
+      var n,m,result;
+    n=parseInt(document.getElementById("num1").value);
+    m=parseInt(document.getElementById("num2").value);
+    result=parseInt(n)-parseInt(m);
+    document.getElementById("result").value=result
+   
+    }
+    subtract()
+
+    function multiply(){
+    var n,m,result;
+    n=parseInt(document.getElementById("num1").value);
+    m=parseInt(document.getElementById("num2").value);
+    result=parseInt(n)*parseInt(m);
+    document.getElementById("result").value=result
+   
+    }
+    multiply()
+    function divide(){
+    var n,m,result;
+    n=parseInt(document.getElementById("num1").value);
+    m=parseInt(document.getElementById("num2").value);
+    result=parseInt(n)%parseInt(m);
+    document.getElementById("result").value=result
+   
+    }
+    divide()
+  
+  
+  
+  </script>
+</body>
+</html>

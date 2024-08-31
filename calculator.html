@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .main{
+        height:400px;
+        width:300px;
+        border: 2px solid black;
+    }
+    .btn{
+        height:40px;
+        width:40px;
+        margin-left:40px;
+        margin-top:20px;
+    }
+</style>
+<body>
+    <div class="main">
+    <div><input id="input" style="width:293px; " onclick="earse()"></div>
+    <button class="btn" id="btn1" onclick="a()">1</button>
+    <button class="btn" id="btn2" onclick="b()">2</button>
+    <button class="btn" id="btn3" onclick="c()">3</button>
+
+    <button class="btn" id="btn4" onclick="d()">4</button>
+    <button class="btn" id="btn5" onclick="e()">5</button>
+    <button class="btn" id="btn6" onclick="f()">6</button>
+
+    <button class="btn" id="btn7" onclick="g()">7</button>
+    <button class="btn" id="btn8" onclick="h()">8</button>
+    <button class="btn" id="btn9" onclick="i()">9</button>
+
+    
+    <button class="btn" id="btnsum" onclick="sum()">+</button>
+    <button class="btn" id="btnsub" onclick="sub()">-</button>
+    <button class="btn" id="btnmulti" onclick="multiply()">*</button>
+
+    
+    <button class="btn" id="btndivide" onclick="divide()">/</button>
+    <button class="btn" id="btnequal" onclick="equal()">=</button>
+    <button class="btn" id="btnclear" onclick="clear()">clear</button>
+
+<script>
+    function earse(){
+    let output=document.getElementById("input")
+        function K(){
+             output.innerHTML=""
+        }
+            
+    }
+    
+    function a(){
+        let output=document.getElementById("input").value;
+        output.innerHTML+="1";
+    }
+
+    function b(){
+        let output=document.getElementById("input")
+        output.innerHTML+="2";
+    }
+
+    function c(){
+        let output=document.getElementById("input")
+        output.innerHTML+="3";
+    }
+    function d(){
+        let output=document.getElementById("input")
+        output.innerHTML+="4";
+    }
+    function e(){
+        let output=document.getElementById("input")
+        output.innerHTML+="5";
+    }
+
+    function f(){
+        let output=document.getElementById("input")
+        output.innerHTML+="6";
+    }
+
+    function g(){
+        let output=document.getElementById("input")
+        output.innerHTML+="7";
+    }
+
+    function h(){
+        let output=document.getElementById("input")
+        output.innerHTML+="8";
+    }
+
+    function i(){
+        let output=document.getElementById("input")
+        output.innerHTML+="9";
+    }
+
+    function sum(){
+        let output=document.getElementById("input")
+        output.innerHTML+="+";
+    }
+
+    function sub(){
+        let output=document.getElementById("input")
+        output.innerHTML+="-";
+    }
+    function multiply(){
+        let output=document.getElementById("input")
+        output.innerHTML+="*";
+    }
+    function divide(){
+        let output=document.getElementById("input")
+        output.innerHTML+="/";
+    }
+
+    function equal(){
+        let output=document.getElementById("input")
+        output.innerHTML+="=";
+    }
+
+    function clear(){
+        let output=document.getElementById("input")
+        output.innerHTML+="clear";
+    }
+  
+  function equal(){
+    let output=document.getElementById("input")
+    if(sum){
+        output=document.innerHTML=eval(output.innerHTML)
+    }
+    else if(sub){
+        output=document.innerHTML=eval(output.innerHTML)
+    }
+    else if(multiply){
+        output=document.innerHTML=eval(output.innerHTML)
+    }
+    else if(divide){
+        output=document.innerHTML=eval(output.innerHTML)
+    }
+  }
+</script>
+    </div>
+</body>
+</html>
